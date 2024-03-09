@@ -8,7 +8,7 @@ public static WebDriver driver;
 	
 	public static void openBrowser()
 	{
-		
+		System.setProperty("webdriver.chrome.driver", "C:\\Users\\harih\\Downloads\\chromedriver-win64.zip\\chromedriver-win64\\chromedriver.exe");
 		driver = new ChromeDriver();
 		
 		driver.manage().window().maximize();
