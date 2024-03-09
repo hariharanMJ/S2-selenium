@@ -11,7 +11,7 @@ import org.testng.annotations.DataProvider;
 import org.testng.annotations.Test;
 
 public class ExcelUtility {
-public static WebDriver driver;
+public  WebDriver driver;
 	
 	@BeforeClass
 	public void openBrowser()

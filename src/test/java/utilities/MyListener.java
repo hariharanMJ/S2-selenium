@@ -21,7 +21,7 @@ import com.aventstack.extentreports.reporter.ExtentSparkReporter;
 
 public class MyListener implements ITestListener{
 	
-	public static WebDriver driver;
+	public  WebDriver driver;
 	public static ExtentReports ex;
 	public static ExtentTest extentTest;
 	
