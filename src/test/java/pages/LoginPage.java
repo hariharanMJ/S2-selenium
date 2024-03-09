@@ -7,9 +7,7 @@ import org.openqa.selenium.support.FindBy;
 import org.openqa.selenium.support.PageFactory;
 
 public class LoginPage {
-	public  WebDriver driver;
-	
-	
+		
 	
 	@FindBy(xpath="//div[@class='vector-menu mw-portlet']/descendant::span[2]")
 	WebElement loginPage;

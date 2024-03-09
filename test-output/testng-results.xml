@@ -1,48 +1,24 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<testng-results ignored="0" total="7" passed="6" failed="1" skipped="0">
+<testng-results ignored="0" total="2" passed="1" failed="1" skipped="0">
   <reporter-output>
   </reporter-output>
-  <suite started-at="2024-03-09T11:16:24 IST" name="TestNGRunner1" finished-at="2024-03-09T11:17:16 IST" duration-ms="51844">
+  <suite started-at="2024-03-09T12:13:38 IST" name="Default suite" finished-at="2024-03-09T12:13:53 IST" duration-ms="14268">
     <groups>
     </groups>
-    <test started-at="2024-03-09T11:16:24 IST" name="TestCycle-1" finished-at="2024-03-09T11:16:42 IST" duration-ms="17759">
+    <test started-at="2024-03-09T12:13:38 IST" name="Default test" finished-at="2024-03-09T12:13:53 IST" duration-ms="14268">
       <class name="tests.LoginPageTest">
-        <test-method signature="start_browser()[pri:49, instance:tests.LoginPageTest@3eb738bb]" started-at="2024-03-09T11:16:24 IST" name="start_browser" finished-at="2024-03-09T11:16:37 IST" duration-ms="12848" status="PASS">
+        <test-method signature="start_browser()[pri:49, instance:tests.LoginPageTest@77c2494c]" started-at="2024-03-09T12:13:38 IST" name="start_browser" finished-at="2024-03-09T12:13:50 IST" duration-ms="11951" status="PASS">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- start_browser -->
-        <test-method signature="test_user_login()[pri:50, instance:tests.LoginPageTest@3eb738bb]" started-at="2024-03-09T11:16:37 IST" name="test_user_login" finished-at="2024-03-09T11:16:41 IST" duration-ms="3645" status="PASS">
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- test_user_login -->
-        <test-method is-config="true" signature="close_browser()[pri:0, instance:tests.LoginPageTest@3eb738bb]" started-at="2024-03-09T11:16:41 IST" name="close_browser" finished-at="2024-03-09T11:16:42 IST" duration-ms="1201" status="PASS">
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- close_browser -->
-      </class> <!-- tests.LoginPageTest -->
-    </test> <!-- TestCycle-1 -->
-    <test started-at="2024-03-09T11:16:42 IST" name="TestCycle-2" finished-at="2024-03-09T11:16:55 IST" duration-ms="12733">
-      <class name="utilities.MyListener">
-        <test-method is-config="true" signature="OpenBrowser()[pri:0, instance:utilities.MyListener@757277dc]" started-at="2024-03-09T11:16:42 IST" name="OpenBrowser" finished-at="2024-03-09T11:16:43 IST" duration-ms="1260" status="PASS">
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- OpenBrowser -->
-        <test-method signature="extentReportDemo()[pri:0, instance:utilities.MyListener@757277dc]" started-at="2024-03-09T11:16:43 IST" name="extentReportDemo" finished-at="2024-03-09T11:16:44 IST" duration-ms="788" status="PASS">
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- extentReportDemo -->
-        <test-method signature="ListenersMethod()[pri:49, instance:utilities.MyListener@757277dc]" started-at="2024-03-09T11:16:44 IST" name="ListenersMethod" finished-at="2024-03-09T11:16:54 IST" duration-ms="10293" status="FAIL">
-          <exception class="java.lang.AssertionError">
+        <test-method signature="test_user_login()[pri:50, instance:tests.LoginPageTest@77c2494c]" started-at="2024-03-09T12:13:50 IST" name="test_user_login" finished-at="2024-03-09T12:13:51 IST" duration-ms="1013" status="FAIL">
+          <exception class="java.lang.NullPointerException">
             <message>
-              <![CDATA[expected [true] but found [false]]]>
+              <![CDATA[Cannot invoke "pages.LoginPage.user_login()" because "this.lp" is null]]>
             </message>
             <full-stacktrace>
-              <![CDATA[java.lang.AssertionError: expected [true] but found [false]
-at org.testng.Assert.fail(Assert.java:110)
-at org.testng.Assert.failNotEquals(Assert.java:1577)
-at org.testng.Assert.assertTrue(Assert.java:56)
-at org.testng.Assert.assertTrue(Assert.java:66)
-at utilities.MyListener.ListenersMethod(MyListener.java:54)
+              <![CDATA[java.lang.NullPointerException: Cannot invoke "pages.LoginPage.user_login()" because "this.lp" is null
+at tests.LoginPageTest.test_user_login(LoginPageTest.java:30)
 at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
 at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:77)
 at java.base/jdk.internal.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
@@ -73,75 +49,15 @@ at org.testng.remote.RemoteTestNG.initAndRun(RemoteTestNG.java:251)
 at org.testng.remote.RemoteTestNG.main(RemoteTestNG.java:77)
 ]]>
             </full-stacktrace>
-          </exception> <!-- java.lang.AssertionError -->
+          </exception> <!-- java.lang.NullPointerException -->
           <reporter-output>
           </reporter-output>
-        </test-method> <!-- ListenersMethod -->
-        <test-method is-config="true" signature="Closebrowser()[pri:0, instance:utilities.MyListener@757277dc]" started-at="2024-03-09T11:16:54 IST" name="Closebrowser" finished-at="2024-03-09T11:16:55 IST" duration-ms="153" status="PASS">
+        </test-method> <!-- test_user_login -->
+        <test-method is-config="true" signature="close_browser()[pri:0, instance:tests.LoginPageTest@77c2494c]" started-at="2024-03-09T12:13:51 IST" name="close_browser" finished-at="2024-03-09T12:13:53 IST" duration-ms="1236" status="PASS">
           <reporter-output>
           </reporter-output>
-        </test-method> <!-- Closebrowser -->
-      </class> <!-- utilities.MyListener -->
-    </test> <!-- TestCycle-2 -->
-    <test started-at="2024-03-09T11:16:55 IST" name="TestCycle-3" finished-at="2024-03-09T11:17:16 IST" duration-ms="21241">
-      <class name="utilities.ExcelUtility">
-        <test-method is-config="true" signature="openBrowser()[pri:0, instance:utilities.ExcelUtility@6ff29830]" started-at="2024-03-09T11:16:55 IST" name="openBrowser" finished-at="2024-03-09T11:17:07 IST" duration-ms="11999" status="PASS">
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- openBrowser -->
-        <test-method signature="Inputdata(java.lang.String,java.lang.String)[pri:0, instance:utilities.ExcelUtility@6ff29830]" started-at="2024-03-09T11:17:07 IST" name="Inputdata" data-provider="TestData" finished-at="2024-03-09T11:17:10 IST" duration-ms="2732" status="PASS">
-          <params>
-            <param index="0">
-              <value>
-                <![CDATA[admin]]>
-              </value>
-            </param>
-            <param index="1">
-              <value>
-                <![CDATA[admin123]]>
-              </value>
-            </param>
-          </params>
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- Inputdata -->
-        <test-method signature="Inputdata(java.lang.String,java.lang.String)[pri:0, instance:utilities.ExcelUtility@6ff29830]" started-at="2024-03-09T11:17:10 IST" name="Inputdata" data-provider="TestData" finished-at="2024-03-09T11:17:14 IST" duration-ms="4032" status="PASS">
-          <params>
-            <param index="0">
-              <value>
-                <![CDATA[mercury]]>
-              </value>
-            </param>
-            <param index="1">
-              <value>
-                <![CDATA[mercury123]]>
-              </value>
-            </param>
-          </params>
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- Inputdata -->
-        <test-method signature="Inputdata(java.lang.String,java.lang.String)[pri:0, instance:utilities.ExcelUtility@6ff29830]" started-at="2024-03-09T11:17:14 IST" name="Inputdata" data-provider="TestData" finished-at="2024-03-09T11:17:16 IST" duration-ms="1886" status="PASS">
-          <params>
-            <param index="0">
-              <value>
-                <![CDATA[test@1]]>
-              </value>
-            </param>
-            <param index="1">
-              <value>
-                <![CDATA[testTeam]]>
-              </value>
-            </param>
-          </params>
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- Inputdata -->
-        <test-method is-config="true" signature="CloseBrowser()[pri:0, instance:utilities.ExcelUtility@6ff29830]" started-at="2024-03-09T11:17:16 IST" name="CloseBrowser" finished-at="2024-03-09T11:17:16 IST" duration-ms="240" status="PASS">
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- CloseBrowser -->
-      </class> <!-- utilities.ExcelUtility -->
-    </test> <!-- TestCycle-3 -->
-  </suite> <!-- TestNGRunner1 -->
+        </test-method> <!-- close_browser -->
+      </class> <!-- tests.LoginPageTest -->
+    </test> <!-- Default test -->
+  </suite> <!-- Default suite -->
 </testng-results>

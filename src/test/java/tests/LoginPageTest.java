@@ -9,6 +9,7 @@ import pages.LoginPage;
 
 
 public class LoginPageTest {
+	
 	public  WebDriver driver;	
 	LoginPage lp;
 	
@@ -21,6 +22,7 @@ public class LoginPageTest {
 		driver.manage().window().maximize();
 		driver.manage().deleteAllCookies();
 		driver.get("https://en.wikipedia.org/wiki/Main_Page");
+		lp = new LoginPage(driver);
 	}
 	@Test(priority='2')
 	public void test_user_login() throws InterruptedException
