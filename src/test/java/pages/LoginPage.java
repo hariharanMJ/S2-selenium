@@ -24,10 +24,10 @@ public class LoginPage {
 	WebElement LoginBtn;
 	
 	
-	/*public LoginPage(WebDriver driver)
+	public LoginPage(WebDriver driver)
 	{
 		PageFactory.initElements(driver, this);
-	}*/
+	}
 	
 	public void user_login() {
 		loginPage.click();
