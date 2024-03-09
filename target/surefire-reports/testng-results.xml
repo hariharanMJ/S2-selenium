@@ -1,0 +1,105 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<testng-results ignored="0" total="7" passed="7" failed="0" skipped="0">
+  <reporter-output>
+  </reporter-output>
+  <suite started-at="2024-03-09T12:53:44 IST" name="TestNGRunner1" finished-at="2024-03-09T12:54:38 IST" duration-ms="53820">
+    <groups>
+    </groups>
+    <test started-at="2024-03-09T12:53:44 IST" name="TestCycle-1" finished-at="2024-03-09T12:54:09 IST" duration-ms="24595">
+      <class name="tests.LoginPageTest">
+        <test-method signature="start_browser()[pri:49, instance:tests.LoginPageTest@188715b5]" started-at="2024-03-09T12:53:44 IST" name="start_browser" finished-at="2024-03-09T12:53:56 IST" duration-ms="11783" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- start_browser -->
+        <test-method signature="test_user_login()[pri:50, instance:tests.LoginPageTest@188715b5]" started-at="2024-03-09T12:53:56 IST" name="test_user_login" finished-at="2024-03-09T12:54:08 IST" duration-ms="11513" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- test_user_login -->
+        <test-method is-config="true" signature="close_browser()[pri:0, instance:tests.LoginPageTest@188715b5]" started-at="2024-03-09T12:54:08 IST" name="close_browser" finished-at="2024-03-09T12:54:09 IST" duration-ms="1251" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- close_browser -->
+      </class> <!-- tests.LoginPageTest -->
+    </test> <!-- TestCycle-1 -->
+    <test started-at="2024-03-09T12:54:09 IST" name="TestCycle-2" finished-at="2024-03-09T12:54:20 IST" duration-ms="11297">
+      <class name="utilities.MyListener">
+        <test-method is-config="true" signature="OpenBrowser()[pri:0, instance:utilities.MyListener@131774fe]" started-at="2024-03-09T12:54:09 IST" name="OpenBrowser" finished-at="2024-03-09T12:54:10 IST" duration-ms="926" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- OpenBrowser -->
+        <test-method signature="extentReportDemo()[pri:0, instance:utilities.MyListener@131774fe]" started-at="2024-03-09T12:54:10 IST" name="extentReportDemo" finished-at="2024-03-09T12:54:11 IST" duration-ms="720" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- extentReportDemo -->
+        <test-method signature="ListenersMethod()[pri:49, instance:utilities.MyListener@131774fe]" started-at="2024-03-09T12:54:11 IST" name="ListenersMethod" finished-at="2024-03-09T12:54:20 IST" duration-ms="9441" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- ListenersMethod -->
+        <test-method is-config="true" signature="Closebrowser()[pri:0, instance:utilities.MyListener@131774fe]" started-at="2024-03-09T12:54:20 IST" name="Closebrowser" finished-at="2024-03-09T12:54:20 IST" duration-ms="209" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- Closebrowser -->
+      </class> <!-- utilities.MyListener -->
+    </test> <!-- TestCycle-2 -->
+    <test started-at="2024-03-09T12:54:20 IST" name="TestCycle-3" finished-at="2024-03-09T12:54:38 IST" duration-ms="17857">
+      <class name="utilities.ExcelUtility">
+        <test-method is-config="true" signature="openBrowser()[pri:0, instance:utilities.ExcelUtility@351d00c0]" started-at="2024-03-09T12:54:20 IST" name="openBrowser" finished-at="2024-03-09T12:54:32 IST" duration-ms="11641" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- openBrowser -->
+        <test-method signature="Inputdata(java.lang.String,java.lang.String)[pri:0, instance:utilities.ExcelUtility@351d00c0]" started-at="2024-03-09T12:54:32 IST" name="Inputdata" data-provider="TestData" finished-at="2024-03-09T12:54:34 IST" duration-ms="1848" status="PASS">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[admin]]>
+              </value>
+            </param>
+            <param index="1">
+              <value>
+                <![CDATA[admin123]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- Inputdata -->
+        <test-method signature="Inputdata(java.lang.String,java.lang.String)[pri:0, instance:utilities.ExcelUtility@351d00c0]" started-at="2024-03-09T12:54:34 IST" name="Inputdata" data-provider="TestData" finished-at="2024-03-09T12:54:36 IST" duration-ms="1899" status="PASS">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[mercury]]>
+              </value>
+            </param>
+            <param index="1">
+              <value>
+                <![CDATA[mercury123]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- Inputdata -->
+        <test-method signature="Inputdata(java.lang.String,java.lang.String)[pri:0, instance:utilities.ExcelUtility@351d00c0]" started-at="2024-03-09T12:54:36 IST" name="Inputdata" data-provider="TestData" finished-at="2024-03-09T12:54:38 IST" duration-ms="1857" status="PASS">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[test@1]]>
+              </value>
+            </param>
+            <param index="1">
+              <value>
+                <![CDATA[testTeam]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- Inputdata -->
+        <test-method is-config="true" signature="CloseBrowser()[pri:0, instance:utilities.ExcelUtility@351d00c0]" started-at="2024-03-09T12:54:38 IST" name="CloseBrowser" finished-at="2024-03-09T12:54:38 IST" duration-ms="214" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- CloseBrowser -->
+      </class> <!-- utilities.ExcelUtility -->
+    </test> <!-- TestCycle-3 -->
+  </suite> <!-- TestNGRunner1 -->
+</testng-results>
